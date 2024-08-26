@@ -1,0 +1,12 @@
+import time
+import os
+os.system("cls || clear")
+soma = 0
+
+for i in range(10):
+    primeiro_numero = int(input("Digite um número: "))
+    segundo_numero = int(input("Digite um número: "))
+    soma = soma + primeiro_numero + segundo_numero 
+    print(f"Soma: {soma}")
+
+print("FIM")

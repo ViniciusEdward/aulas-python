@@ -2,21 +2,45 @@ import os
 os.system("cls || clear")
 
 soma = 0
-QUANTIDADE_NOTAS = 3
+soma_adicional = 0
 
-for i in range(QUANTIDADE_NOTAS):
+for i in range(3):
     while True:
-        nota = float(input("\nDigite uma nota: "))
+        nota = float(input(f"Digite {i + 1}º nota: "))
+        soma += nota 
         if nota < 0 or nota > 10:
             os.system("cls || clear")
-            print("Número inválido, digite um número entre 0 e 10")
+            print("Nota inválida, digite novamente.")
         else:
             break
-
-    soma += nota
+print("""
+1 - A (Adicionar mais uma nota)
+2 - N (Mostrar resultado)
+     """)
     
-media = soma / QUANTIDADE_NOTAS    
-print(f"Média: {media}")
+adicionar = input("\nDeseja adicionar mais uma nota? (A ou N): ").upper()
+
+match(adicionar):
+    case "A":
+        qntd_notas = int(input("Informe a quantidade de notas: "))
+
+        for i in range(qntd_notas):
+            while True:
+                nota_adicional = float(input(f"\nDigite {i + 4}º nota: "))
+                soma_adicional += nota_adicional
+                if nota_adicional < 0 or nota_adicional > 10:
+                    os.system("cls || clear")
+                    print("Nota inválida, digite novamente.")
+                else:
+                    break
+        media = (soma + soma_adicional) / (qntd_notas + 3)
+        
+
+    case "N": 
+        media = soma / 3
+        soma += nota  
+
+print(f"\nMédia: {media:.2f}")
 
 if media >= 7:
     print("Parabéns, você está aprovado!")

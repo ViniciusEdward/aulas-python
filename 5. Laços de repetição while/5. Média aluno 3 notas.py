@@ -6,9 +6,13 @@ QUANTIDADE_NOTAS = 3
 
 for i in range(QUANTIDADE_NOTAS):
     while True:
-        nota = float(input("Digite uma nota: "))
-        if nota >= 0 and nota <= 10:
+        nota = float(input("\nDigite uma nota: "))
+        if nota < 0 or nota > 10:
+            os.system("cls || clear")
+            print("Número inválido, digite um número entre 0 e 10")
+        else:
             break
+
     soma += nota
     
 media = soma / QUANTIDADE_NOTAS    

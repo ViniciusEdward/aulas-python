@@ -3,6 +3,7 @@ os.system("cls || clear")
 
 def calculo_peso(n1,n2):
     calculo = n1 / (pow(n2, 2))
+    return calculo
 
 def peso():
 
@@ -30,10 +31,9 @@ def peso():
         print("\nObesidade grau 3.")
         print("Busque assitência médica imediatamente.")
 
-peso = 
 
 pesokg = float(input("Digite seu peso: "))
 altura = float(input("Digite sua altura: "))
+imc = calculo_peso(pesokg, altura)
 print(f"IMC: {imc:.2f}")
-
 peso()

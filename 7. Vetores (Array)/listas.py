@@ -34,6 +34,5 @@ os.system("cls || clear")
 
 # Remover um elemento da lista
 #minha_lista = ["olá", "mundo", "Asimov", "Academy"]
-
 #del minha_lista[1]
 #print(minha_lista)

@@ -15,4 +15,4 @@ def media():
             print("Reprovado")
     
 media()
-print("--- FIM ---")                          
+print("--- FIM ---")

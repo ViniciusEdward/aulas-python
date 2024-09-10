@@ -17,5 +17,5 @@ os.system("cls || clear")
 print("=== Exibindo resultado ===")
 for i, nota in enumerate(lista_numero):
     print(f"{i+1}ª nota: {nota}")
-print(f"\nPares: {pares}")
+print(f"Pares: {pares}")
 print(f"Impares: {impares}")

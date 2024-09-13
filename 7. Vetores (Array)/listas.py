@@ -32,7 +32,12 @@ os.system("cls || clear")
 #minha_lista[1] = "Novo Valor"
 #print(minha_lista)
 
-# Remover um elemento da lista
+# Remover um elemento da lista;
 #minha_lista = ["olá", "mundo", "Asimov", "Academy"]
 #del minha_lista[1]
 #print(minha_lista)
+
+# Para reverter a lista
+#lista_de_numeros = [1, 2, 3]
+#for numero in reversed(lista_de_numeros):
+#print(numero)

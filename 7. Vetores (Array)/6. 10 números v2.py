@@ -29,6 +29,6 @@ for i, nota in enumerate(lista_numero):
 
 positivos, negativos, soma = verificar_positivos_negativos(lista_numero)
 
-print(f"Soma dos números positivos: {soma}")
+print(f"\nSoma dos números positivos: {soma}")
 print(f"Positivos: {positivos}")
 print(f"Negativos: {negativos}")

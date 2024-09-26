@@ -19,10 +19,10 @@ for i in range(qntd_alunos):
     )
     lista_alunos.append(aluno)
 
-print("\n=== Exibindo os dados dos alunos ===")
-for aluno in lista_alunos:
-    print(f"Nome: {aluno.nome}")
-    print(f"Idade: {aluno.idade}")
+#print("\n=== Exibindo os dados dos alunos ===")
+#for aluno in lista_alunos:
+    #print(f"Nome: {aluno.nome}")
+    #print(f"Idade: {aluno.idade}")
 
 # Definindo arquivo para salvar os dados.
 nome_arquivo = "Lista_de_alunos_Senai.txt"
@@ -34,5 +34,23 @@ with open(nome_arquivo, "w") as arquivo_alunos:
     for aluno in lista_alunos:
     # Escrevendo no arquivo uma linha de cada vez.
         arquivo_alunos.write(f"{aluno.nome}, {aluno.idade}\n")
-
+arquivo_alunos.close()
 print("\n=== Dados dos alunos salvo com sucesso ===")
+
+
+# Lendo dados de um arquivo.
+# Limpando a lista de alunos.
+lista_alunos = []
+
+print("\n=== Acessando dados de um arquivo ===")
+with open(nome_arquivo, "r") as arquivo_origem:
+    for linha in arquivo_origem:
+        nome, idade = linha.strip().split(",")
+        lista_alunos.append(Aluno(nome = nome, idade = int(idade)))
+
+# Fechar conexão com o arquivo.
+arquivo_alunos.close()
+print("\n=== Exibindo dados dos alunos do arquivo ===")
+for aluno in lista_alunos:
+    print(f"Nome: {aluno.nome}")
+    print(f"Idade: {aluno.idade}")

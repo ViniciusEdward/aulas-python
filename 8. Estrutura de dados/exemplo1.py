@@ -23,3 +23,16 @@ print("\n=== Exibindo os dados dos alunos ===")
 for aluno in lista_alunos:
     print(f"Nome: {aluno.nome}")
     print(f"Idade: {aluno.idade}")
+
+# Definindo arquivo para salvar os dados.
+nome_arquivo = "Lista_de_alunos_Senai.txt"
+
+# Abrindo arquivo e definindo que será feita a escrita de dados.
+with open(nome_arquivo, "w") as arquivo_alunos:
+
+# Percorrendo vetor 
+    for aluno in lista_alunos:
+    # Escrevendo no arquivo uma linha de cada vez.
+        arquivo_alunos.write(f"{aluno.nome}, {aluno.idade}\n")
+
+print("\n=== Dados dos alunos salvo com sucesso ===")

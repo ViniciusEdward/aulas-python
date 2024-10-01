@@ -19,11 +19,6 @@ for i in range(qntd_alunos):
     )
     lista_alunos.append(aluno)
 
-#print("\n=== Exibindo os dados dos alunos ===")
-#for aluno in lista_alunos:
-    #print(f"Nome: {aluno.nome}")
-    #print(f"Idade: {aluno.idade}")
-
 # Definindo arquivo para salvar os dados.
 nome_arquivo = "Lista_de_alunos_Senai.txt"
 
@@ -39,7 +34,6 @@ print("\n=== Dados dos alunos salvo com sucesso ===")
 
 
 # Lendo dados de um arquivo.
-# Limpando a lista de alunos.
 lista_alunos = []
 
 print("\n=== Acessando dados de um arquivo ===")

@@ -1,4 +1,2 @@
 vinicius, 17
-carlos, 18
-vinicius, 17
-carlos, 19
+carlos, 17

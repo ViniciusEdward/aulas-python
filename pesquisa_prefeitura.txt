@@ -1,2 +1,6 @@
-Total de famílias que responderam: 3, Média salarial: 1500.0, Média do número de filhos: 5.666666666666667, Maior salário: 2000.0, Menor salário: 1000.0
-Total de famílias que responderam: 3, Média salarial: 1500.0, Média do número de filhos: 5.666666666666667, Maior salário: 2000.0, Menor salário: 1000.0
+
+Total de famílias que responderam: 2 
+Média salarial: 1817.00 
+Média do número de filhos: 627.00
+Maior salário: R$2134.00 
+Menor salário: R$1500.00

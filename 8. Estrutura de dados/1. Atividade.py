@@ -29,7 +29,7 @@ for i in range(QNTD_ALUNOS):
 nome_arquivo = "carteira_de_clientes.txt"
 
 # Abrindo arquivo e definindo que será feita a escrita de dados.
-with open(nome_arquivo, "a") as arquivo_alunos:
+with open(nome_arquivo, "w") as arquivo_alunos:
     # Percorrendo vetor 
     for aluno in lista_alunos:
     # Escrevendo no arquivo uma linha de cada vez.
